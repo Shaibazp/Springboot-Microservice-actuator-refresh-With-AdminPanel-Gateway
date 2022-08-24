@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Shaibazp/springbootConfig.git
-          username: shaibazpathan786@gmail.com
-          password: Apple@9900
-          default-label: main
+          uri: 
+          username: 
+          password: 
+          default-label: 
