@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+spring:
+  application:
+    name: Connect-Service
+  boot:
+    admin:
+      client:
+        url: http://localhost:9009
+  config:
+    import: optional:configserver:http://localhost:8888
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

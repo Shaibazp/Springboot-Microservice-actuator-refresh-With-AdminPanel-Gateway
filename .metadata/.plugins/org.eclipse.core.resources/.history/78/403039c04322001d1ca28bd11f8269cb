@@ -1,0 +1,28 @@
+package com.example.demo.controller;
+
+import java.net.URI;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+
+
+
+public class connectuser 
+{
+	@Autowired
+	private DiscoveryClient client;
+	
+	public String getStud()
+	{
+		List<ServiceInstance> si = client.getInstances("");
+		
+		ServiceInstance sii = si.get(0);
+		
+		URI uri = sii.getUri();
+		
+		String url = uri+"prod/all";
+		return null;
+	}
+}

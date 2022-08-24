@@ -1,0 +1,13 @@
+server:
+  port: 80
+  
+spring:
+  application:
+    name: Gateway
+  cloud:
+    gateway:
+      routes:
+      - id: 
+        uri:
+        predicates:
+        - Path=/web.**

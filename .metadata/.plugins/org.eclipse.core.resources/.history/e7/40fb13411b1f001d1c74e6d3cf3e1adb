@@ -1,0 +1,5 @@
+package com.example.demo.ProdError;
+
+public class ProductNotFound {
+
+}

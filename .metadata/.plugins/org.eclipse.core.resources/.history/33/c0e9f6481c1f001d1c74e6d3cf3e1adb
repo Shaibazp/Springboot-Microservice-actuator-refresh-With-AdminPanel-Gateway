@@ -1,0 +1,45 @@
+package com.example.demo.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Entity.Product;
+import com.example.demo.repository.StudRepository;
+@Service
+public class ImpProdService implements ProductService
+{
+	@Autowired
+	private StudRepository repository;
+	
+	public Integer saveProduct(Product product) 
+	{
+		return repo.;
+	}
+
+	public List<Product> getAllProduct() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Product getOneProduct(Integer pid) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void deletProduct(Integer pid) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+	public void updateProduct(Integer pid) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

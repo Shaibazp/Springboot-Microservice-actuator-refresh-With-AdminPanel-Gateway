@@ -1,0 +1,12 @@
+package com.example.demo.services;
+
+import java.util.List;
+
+import com.example.demo.Entity.Product;
+
+public interface ProductService 
+{
+	Integer saveProduct(Product product);
+	List<Product> getAllProduct();
+	
+}
